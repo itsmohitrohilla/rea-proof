@@ -1,0 +1,14 @@
+# Added by `npx rea-proof init`. Fails the run when the build leaks secrets, source maps or open data.
+name: rea-proof
+on: [push, pull_request]
+jobs:
+  rea-proof:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm ci
+      - run: npm run build --if-present
+      - run: npx -y rea-proof .

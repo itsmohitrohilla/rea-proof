@@ -1,0 +1,12 @@
+{
+  "name": "rea-proof",
+  "version": "0.1.0",
+  "description": "Make reverse engineering your app worthless: find leaked keys, source maps, open database rules, AI prompts in bundles and weak Electron/mobile settings before you ship.",
+  "keywords": ["rea", "reverse-engineering", "anti-reverse-engineering", "source-maps", "secret-scanner", "api-key-leak", "supabase", "firebase", "electron", "vibe-coding", "security"],
+  "type": "module",
+  "bin": { "rea-proof": "bin/rea-proof.mjs" },
+  "files": ["bin", "src", "templates", "docs"],
+  "scripts": { "test": "node --test" },
+  "engines": { "node": ">=20" },
+  "license": "MIT"
+}

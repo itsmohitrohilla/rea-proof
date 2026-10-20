@@ -1,0 +1,3 @@
+# rule definitions and test fixtures contain the patterns rea-proof looks for
+src/rules/
+test/
